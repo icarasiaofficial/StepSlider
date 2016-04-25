@@ -104,6 +104,7 @@ void withoutCAAnimation(withoutAnimationBlock code)
 
 - (void)layoutLayersAnimated:(BOOL)animated
 {
+    animated = NO;
     NSInteger indexDiff = fabsf(roundf([self indexCalculate]) - self.index);
     BOOL left = (roundf([self indexCalculate]) - self.index) < 0;
     
